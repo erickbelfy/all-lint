@@ -1,22 +1,22 @@
 {
-  "name": "all-lint",
+  "name": "eslint-config-erickbelfort",
   "version": "1.0.0",
-  "description": "",
+  "description": "Set of personal confgigurations used to lint projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erickbelfy/all-lint.git"
+    "url": "git+https://github.com/erickbelfy/eslint-config-erickbelfort.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/erickbelfy/all-lint/issues"
+    "url": "https://github.com/erickbelfy/eslint-config-erickbelfort/issues"
   },
-  "homepage": "https://github.com/erickbelfy/all-lint#readme",
+  "homepage": "https://github.com/erickbelfy/eslint-config-erickbelfort#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
