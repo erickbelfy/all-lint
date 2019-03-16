@@ -1,12 +1,9 @@
 module.exports = {
     "extends": [
+        "./.eslintrc.base.js",
         "standard",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "plugin:prettier/recommended",
         "prettier/@typescript-eslint",
-        "prettier/react",
-        "prettier/standard"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
