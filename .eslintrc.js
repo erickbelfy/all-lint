@@ -1,7 +1,6 @@
 module.exports = {
     "extends": [
         "./.eslintrc.base.js",
-        "standard",
         "plugin:@typescript-eslint/recommended",
         "prettier/@typescript-eslint",
     ],
