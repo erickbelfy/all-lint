@@ -1,8 +1,10 @@
 module.exports = {
     "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
         "plugin:prettier/recommended",
         "prettier/@typescript-eslint",
-        "prettier/react"
+        "prettier/react",
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,8 +22,10 @@ module.exports = {
         "jest": true
     },
     "plugins": [
-        "html",
+        "@typescript-eslint",
         "prettier",
+        "react",
         "react-hooks"
-    ]
+    ],
+    "rules": {}
 };
