@@ -1,5 +1,6 @@
 {
   "name": "eslint-config-erickbelfort",
+  "author": "Erick Belfort <erick.belf@gmail.com>",
   "version": "1.0.0",
   "description": "Set of personal confgigurations used to lint projects",
   "main": "index.js",
@@ -10,8 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/erickbelfy/eslint-config-erickbelfort.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["javascript", "lint", "typescript", "react", "eslint"],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/erickbelfy/eslint-config-erickbelfort/issues"
