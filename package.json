@@ -1,0 +1,33 @@
+{
+  "name": "all-lint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickbelfy/all-lint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erickbelfy/all-lint/issues"
+  },
+  "homepage": "https://github.com/erickbelfy/all-lint#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "@typescript-eslint/typescript-estree": "^1.4.2",
+    "eslint": "^5.15.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.1",
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3333"
+  }
+}
