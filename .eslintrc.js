@@ -1,4 +1,4 @@
-const packages = require('./packages.json');
+const packages = require('./package.json');
 
 module.exports = {
     "extends": [
