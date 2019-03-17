@@ -1,12 +1,10 @@
+const packages = require('./packages.json');
+
 module.exports = {
     "extends": [
         "./.eslintrc.base.js",
-    ],
-    "plugins": [
-        "@typescript-eslint",
-        "prettier",
-        "react",
-        "react-hooks",
-        "standard"
+        ...packages.files
+        .filter(name => !name.includes("/"))
+        .map(ruleFile => `./${ruleFile}`)
     ]
 };
