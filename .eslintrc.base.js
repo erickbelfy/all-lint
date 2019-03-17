@@ -2,6 +2,7 @@ const packages = require('./package.json');
 module.exports = {
     "extends": [
         "standard",
+        "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:prettier/recommended",
         "prettier/@typescript-eslint",
@@ -9,6 +10,7 @@ module.exports = {
         "prettier/standard"
     ],
     "parserOptions": {
+        "parser": "babel-eslint",
         "ecmaVersion": 2018,
         "sourceType": "script",
         // Can I remove these now?
@@ -17,7 +19,19 @@ module.exports = {
         "classes": true
         }
     },
+    "overrides": [
+      {
+        files: ["*.ts", "*.tsx"],
+        parserOptions: {
+          parser: "@typescript-eslint/parser"
+        },
+        rules: {
+          "@typescript-eslint/indent": "error"
+        }
+      }
+    ],
     "env": {
+        "es6": true,
         "browser": true,
         "node": true,
         "jquery": true,
