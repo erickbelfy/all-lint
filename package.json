@@ -17,7 +17,14 @@
     "lint",
     "typescript",
     "react",
-    "eslint"
+    "eslint",
+    "tslint"
+  ],
+  "files": [
+    "@typescript-eslint.js",
+    "index.js",
+    "react.js",
+    "standard.js"
   ],
   "license": "ISC",
   "bugs": {
