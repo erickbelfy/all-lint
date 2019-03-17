@@ -2,9 +2,9 @@ const packages = require('./package.json');
 module.exports = {
     "extends": [
         "standard",
+        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended",
         "prettier/@typescript-eslint",
         "prettier/react",
         "prettier/standard"

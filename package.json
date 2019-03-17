@@ -23,8 +23,8 @@
   "files": [
     "@typescript-eslint.js",
     "index.js",
-    "react.js",
-    "standard.js"
+    "standard.js",
+    "react.js"
   ],
   "license": "ISC",
   "bugs": {
