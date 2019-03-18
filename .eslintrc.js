@@ -30,7 +30,8 @@ module.exports = {
         // Can I remove these now?
         ecmaFeatures: {
           impliedStrict: true,
-          classes: true
+          classes: true,
+          jsx: true
         }
     },
     env: {
