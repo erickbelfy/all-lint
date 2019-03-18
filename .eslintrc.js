@@ -7,10 +7,21 @@ const standardRules = require('./standard');
 module.exports = {
     extends: [
         "standard",
+        "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "prettier",
+        "prettier/@typescript-eslint",
+        "prettier/babel",
         "prettier/react",
         "prettier/standard",
+    ],
+    plugins: [
+        '@typescript-eslint',
+        'babel',
+        'html',
+        'prettier',
+        'react',
+        'react-hooks'
     ],
     parserOptions: {
         parser: "babel-eslint",
@@ -43,11 +54,6 @@ module.exports = {
         ...standardRules.rules,
         ...reactRules.rules,
     },
-    plugins: [
-        'html',
-        'prettier',
-        'react-hooks'
-    ],
     settings: {
         react: {
         version: '16'
