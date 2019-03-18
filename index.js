@@ -8,35 +8,43 @@ module.exports = {
       2,
       'ForInStatement',
       'LabeledStatement',
-      'WithStatement',
+      'WithStatement'
     ],
     'no-unused-vars': [
       1,
       {
         ignoreSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
-      },
+        argsIgnorePattern: 'res|next|^err'
+      }
     ],
     'prefer-const': [
       'error',
       {
-        destructuring: 'all',
-      },
+        destructuring: 'all'
+      }
     ],
     'arrow-body-style': [2, 'as-needed'],
+
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        printWidth: 80
+      }
+    ],
     'no-unused-expressions': [
       2,
       {
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
     'no-param-reassign': [
       2,
       {
-        props: false,
-      },
+        props: false
+      }
     ],
-    'no-console': 0,
+    'no-console': 1,
     'import/prefer-default-export': 0,
     import: 0,
     'func-names': 0,
@@ -51,24 +59,16 @@ module.exports = {
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
-    ],
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'es5',
-        singleQuote: true,
-        printWidth: 80,
-      },
+        allowTemplateLiterals: true
+      }
     ],
     radix: 0,
     'no-shadow': [
       2,
       {
         hoist: 'all',
-        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
-      },
-    ],
-  },
+        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error']
+      }
+    ]
+  }
 };

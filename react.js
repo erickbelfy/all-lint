@@ -11,8 +11,14 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx', '.tsx'],
-      },
-    ],
+        extensions: ['.js', '.jsx']
+      }
+    ]
   },
+  plugins: ['react'],
+  settings: {
+    react: {
+      version: '16'
+    }
+  }
 };
