@@ -1,6 +1,6 @@
 const package = require('./package.json');
 const reactRules = require('./react');
-const typescriptRules = require('./@typescript-eslint');
+const typescriptRules = require('./typescript-rules');
 const mainRules = require('./best-practices');
 const standardRules = require('./standard');
 
