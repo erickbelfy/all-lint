@@ -14,11 +14,5 @@ module.exports = {
         extensions: ['.js', '.jsx']
       }
     ]
-  },
-  plugins: ['react'],
-  settings: {
-    react: {
-      version: '16'
-    }
   }
 };
