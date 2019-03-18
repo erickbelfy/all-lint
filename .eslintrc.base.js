@@ -1,6 +1,6 @@
 const packages = require('./package.json');
 module.exports = {
-    "extends": [
+    extends: [
         "standard",
         "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
@@ -9,14 +9,14 @@ module.exports = {
         "prettier/react",
         "prettier/standard"
     ],
-    "parserOptions": {
-        "parser": "babel-eslint",
-        "ecmaVersion": 2018,
-        "sourceType": "script",
+    parserOptions: {
+        parser: "babel-eslint",
+        ecmaVersion: 2018,
+        sourceType: "script",
         // Can I remove these now?
-        "ecmaFeatures": {
-        "impliedStrict": true,
-        "classes": true
+        ecmaFeatures: {
+          impliedStrict: true,
+          classes: true
         }
     },
     "overrides": [
@@ -30,14 +30,14 @@ module.exports = {
         }
       }
     ],
-    "env": {
+    env: {
         "es6": true,
         "browser": true,
         "node": true,
         "jquery": true,
         "jest": true
     },
-    "plugins": [
+    plugins: [
         "prettier",
         ...packages.files
           .filter(name => !name.includes("/") && name !== "index.js")
