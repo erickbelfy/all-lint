@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-erickbelfort",
   "author": "Erick Belfort <erick.belf@gmail.com>",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Set of personal confgigurations used to lint projects",
   "main": "index.js",
   "scripts": {
