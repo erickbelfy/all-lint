@@ -1,4 +1,4 @@
-const packages = require('./package.json');
+const package = require('./package.json');
 module.exports = {
     extends: [
         "standard",
@@ -39,7 +39,7 @@ module.exports = {
     },
     plugins: [
         "prettier",
-        ...packages.files
+        ...package.files
           .filter(name => !name.includes("/") && name !== "index.js")
           .map(ruleModule => ruleModule.replace(/\.js$/, "")),
     ]
