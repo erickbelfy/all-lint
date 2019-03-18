@@ -7,9 +7,9 @@ const standardRules = require('./standard');
 module.exports = {
     extends: [
         'standard',
-        'plugin:prettier/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
+        'prettier',
         'prettier/@typescript-eslint',
         'prettier/react',
         "prettier/standard",
@@ -44,9 +44,9 @@ module.exports = {
         ...typescriptRules.rules
     },
     plugins: [
+        '@typescript-eslint',
         'html',
         'prettier',
-        '@typescript-eslint',
         'react-hooks'
     ],
     settings: {
