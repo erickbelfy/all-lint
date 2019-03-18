@@ -39,7 +39,7 @@ module.exports = {
     },
     plugins: [
         "prettier",
-        ...package.files
+        ...package.plugin_files
           .filter(name => !name.includes("/") && name !== "index.js")
           .map(ruleModule => ruleModule.replace(/\.js$/, "")),
     ]

@@ -20,7 +20,7 @@
     "eslint",
     "tslint"
   ],
-  "files": [
+  "plugin_files": [
     "@typescript-eslint.js",
     "index.js",
     "standard.js",
