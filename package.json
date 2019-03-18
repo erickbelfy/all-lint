@@ -24,7 +24,8 @@
     "@typescript-eslint.js",
     "index.js",
     "standard.js",
-    "react.js"
+    "react.js",
+    "react-hooks.js"
   ],
   "license": "ISC",
   "bugs": {
