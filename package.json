@@ -31,7 +31,7 @@
     "url": "https://github.com/erickbelfy/eslint-config-erickbelfort/issues"
   },
   "homepage": "https://github.com/erickbelfy/eslint-config-erickbelfort#readme",
-  "dependencies": {
+  "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
     "@typescript-eslint/typescript-estree": "^1.4.2",
@@ -47,8 +47,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.1",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.16.4",
-    "react": "^16.8.4"
+    "prettier": "^1.16.4"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
