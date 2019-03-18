@@ -43,7 +43,7 @@ module.exports = {
         {
             files: ['*.ts', '*.tsx'],
             parser: '@typescript-eslint/parser',
-            parserOptions: { jsx: true },
+            parserOptions: { ecmaFeatures: {jsx: true} },
             rules: {
                 ...typescriptRules.rules
             }
