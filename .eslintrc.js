@@ -1,17 +1,15 @@
 const package = require('./package.json');
 const reactRules = require('./react');
 const typescriptRules = require('./@typescript-eslint');
-const mainRules = require('./index');
+const mainRules = require('./best-practices');
 const standardRules = require('./standard');
 
 module.exports = {
     extends: [
-        'standard',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:react/recommended',
-        'prettier',
-        'prettier/@typescript-eslint',
-        'prettier/react',
+        "standard",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react",
         "prettier/standard",
     ],
     parserOptions: {
@@ -35,16 +33,17 @@ module.exports = {
             files: ['*.ts', '*.tsx'],
             parser: '@typescript-eslint/parser',
             parserOptions: { jsx: true },
+            rules: {
+                ...typescriptRules.rules
+            }
         },
     ],
     rules: {
         ...mainRules.rules,
         ...standardRules.rules,
         ...reactRules.rules,
-        ...typescriptRules.rules
     },
     plugins: [
-        '@typescript-eslint',
         'html',
         'prettier',
         'react-hooks'
