@@ -1,12 +1,12 @@
 {
   "name": "eslint-config-erickbelfort",
   "author": "Erick Belfort <erick.belf@gmail.com>",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Set of personal confgigurations used to lint projects",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint *.ts, *.tsx --fix"
+    "lint": "eslint src/** --ext .tsx,.ts,.js,.jsx",
+    "lint:fix": "yarn lint --fix"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "tslint"
   ],
   "plugin_files": [
-    "index.js",
+    "best-practices.js",
     "@typescript-eslint.js",
     "standard.js",
     "react.js"

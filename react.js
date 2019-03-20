@@ -14,5 +14,10 @@ module.exports = {
         extensions: ['.js', '.jsx', '.tsx']
       }
     ]
+  },
+  settings: {
+      react: {
+      version: '16'
+      }
   }
 };

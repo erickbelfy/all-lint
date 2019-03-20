@@ -20,6 +20,7 @@ module.exports = {
         }
     },
     env: {
+        "es6": true,
         "browser": true,
         "node": true,
         "jquery": true,
@@ -34,7 +35,7 @@ module.exports = {
     ],
     plugins: [
         ...package.plugin_files
-        .filter(name => !name.includes("/") && name !== "index.js")
+        .filter(name => !name.includes("/") && (name !== "index.js" || name !== "best-practices.js") )
         .map(ruleFileName => ruleFileName.replace(/\.js$/, ""))
     ],
 };
